@@ -148,13 +148,13 @@ export default function LoginPage() {
               <p className="mb-2 text-sm font-medium">Demo Credentials:</p>
               <div className="space-y-1 text-xs bg-slate-50 rounded-lg p-3">
                 <p>
-                  <strong>Admin:</strong> admin@fitgym.com / admin123
+                  <strong>Admin:</strong> admin@gmail.com / admin123
                 </p>
                 <p>
-                  <strong>Manager:</strong> manager@fitgym.com / manager123
+                  <strong>Manager:</strong> manager@gmail.com / manager123
                 </p>
                 <p>
-                  <strong>Trainer:</strong> trainer@fitgym.com / trainer123
+                  <strong>Trainer:</strong> trainer@gmail.com / trainer123
                 </p>
               </div>
             </div>
