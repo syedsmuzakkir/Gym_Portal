@@ -5,9 +5,9 @@ import { GeistMono } from "geist/font/mono"
 import "./globals.css"
 
 export const metadata: Metadata = {
-  title: "Government Portal - Administrative System",
-  description: "Secure government portal for employee and customer management",
-  generator: "v0.app",
+  title: "Gym Portal - Administrative System",
+  description: "Secure Gym portal for employee and customer management",
+  // generator: "v0.app",
 }
 
 export default function RootLayout({
