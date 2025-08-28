@@ -71,13 +71,13 @@ const quickActions = [
     href: "/customers",
     color: "bg-green-50 text-green-600 hover:bg-green-100",
   },
-  {
-    title: "Mark Attendance",
-    description: "Scan member codes",
-    icon: QrCode,
-    href: "/attendance",
-    color: "bg-purple-50 text-purple-600 hover:bg-purple-100",
-  },
+  // {
+  //   title: "Mark Attendance",
+  //   description: "Scan member codes",
+  //   icon: QrCode,
+  //   href: "/attendance",
+  //   color: "bg-purple-50 text-purple-600 hover:bg-purple-100",
+  // },
   {
     title: "Process Payment",
     description: "Handle transactions",

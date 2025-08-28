@@ -143,7 +143,7 @@ export default function PaymentProcessor({ isOpen, onClose, customer, invoice = 
   if (!customer) return null
 
   return (
-    <Dialog open={isOpen} onOpenChange={onClose}>
+    <Dialog open={isOpen} onOpenChange={onClose} className = "w-[700px] mt-5">
       <DialogContent className="max-w-2xl">
         <DialogHeader>
           <DialogTitle>Process Payment</DialogTitle>
@@ -153,14 +153,14 @@ export default function PaymentProcessor({ isOpen, onClose, customer, invoice = 
         </DialogHeader>
 
         {!paymentResult ? (
-          <form onSubmit={handleSubmit} className="space-y-6">
+          <form onSubmit={handleSubmit} className="space-y-0 m-0 p-0">
             {/* Customer Info */}
-            <Card>
+            <Card  >
               <CardHeader>
                 <CardTitle className="text-lg">Payment Details</CardTitle>
               </CardHeader>
-              <CardContent className="space-y-4">
-                <div className="grid grid-cols-2 gap-4">
+              <CardContent className="space-y-2">
+                <div className="grid grid-cols-2 gap-2">
                   <div>
                     <Label htmlFor="customer">Customer</Label>
                     <Input id="customer" value={`${customer.name} (${customer.customerId})`} disabled />
@@ -197,7 +197,7 @@ export default function PaymentProcessor({ isOpen, onClose, customer, invoice = 
                 <CardDescription>Choose how the customer wants to pay</CardDescription>
               </CardHeader>
               <CardContent>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
                   {Object.entries(PAYMENT_METHODS).map(([key, method]) => (
                     <motion.div key={method} whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
                       <Card

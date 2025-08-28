@@ -37,11 +37,11 @@ const navigation = [
     href: "/customers",
     icon: UserCheck,
   },
-  {
-    name: "Attendance",
-    href: "/attendance",
-    icon: QrCode,
-  },
+  // {
+  //   // name: "Attendance",
+  //   // href: "/attendance",
+  //   // icon: QrCode,
+  // },
   {
     name: "Payments",
     href: "/payments",
