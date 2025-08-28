@@ -159,7 +159,7 @@ export default function PaymentProcessor({ isOpen, onClose, customer, invoice = 
               <CardHeader>
                 <CardTitle className="text-lg">Payment Details</CardTitle>
               </CardHeader>
-              <CardContent className="space-y-2">
+              <CardContent className="space-y-0">
                 <div className="grid grid-cols-2 gap-2">
                   <div>
                     <Label htmlFor="customer">Customer</Label>
@@ -206,10 +206,10 @@ export default function PaymentProcessor({ isOpen, onClose, customer, invoice = 
                         }`}
                         onClick={() => setPaymentMethod(method)}
                       >
-                        <CardContent className="p-4">
-                          <div className="flex items-center space-x-3">
+                        <CardContent className="p-0">
+                          <div className="flex items-center space-x-1">
                             <div
-                              className={`p-2 rounded-full ${
+                              className={`p-1 rounded-full ${
                                 paymentMethod === method ? "bg-primary text-primary-foreground" : "bg-muted"
                               }`}
                             >
@@ -259,7 +259,7 @@ export default function PaymentProcessor({ isOpen, onClose, customer, invoice = 
           </form>
         ) : (
           /* Payment Result */
-          <div className="space-y-6">
+          <div className="space-y-2">
             <Alert className={paymentResult.success ? "border-green-200 bg-green-50" : "border-red-200 bg-red-50"}>
               {paymentResult.success ? (
                 <CheckCircle className="h-4 w-4 text-green-600" />
@@ -279,8 +279,8 @@ export default function PaymentProcessor({ isOpen, onClose, customer, invoice = 
                     <span className="ml-2">Payment Details</span>
                   </CardTitle>
                 </CardHeader>
-                <CardContent className="space-y-4">
-                  <div className="grid grid-cols-2 gap-4 text-sm">
+                <CardContent className="space-y-2">
+                  <div className="grid grid-cols-2 gap-2 text-sm">
                     <div>
                       <p className="font-medium">Transaction ID</p>
                       <p className="text-muted-foreground">{paymentResult.payment.transactionId}</p>
