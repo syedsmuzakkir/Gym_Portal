@@ -27,6 +27,10 @@ export default function Header({ onMobileMenuToggle, isMobileMenuOpen }) {
     router.push("/login")
   }
 
+  const Settingredirect = ()=>{
+    router.push('/settings')
+  }
+
   const getInitials = (name) => {
     return name
       .split(" ")
@@ -134,7 +138,7 @@ export default function Header({ onMobileMenuToggle, isMobileMenuOpen }) {
                 <User className="mr-2 h-4 w-4" />
                 Profile
               </DropdownMenuItem>
-              <DropdownMenuItem>
+              <DropdownMenuItem onClick={Settingredirect}>
                 <Settings className="mr-2 h-4 w-4" />
                 Settings
               </DropdownMenuItem>
